@@ -163,8 +163,9 @@
 .GG_Slide_Remarks_Name{
     font-family: Hauser;
     color: white;
-    font-size: 120;
+    font-size: 80;
     text-transform: capitalize;
+    text-align: center;
     margin: 0;
     position: absolute;
     transform: translateY(30px);
@@ -221,6 +222,25 @@
 .GG_Slide#GG_Slide_7 > .GG_Slide_Title_BG:nth-child(2){
     opacity: 10%;
 }
+
+.GG_Slide#GG_Slide_8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GG_Slide#GG_Slide_9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GG_Slide#GG_Slide_10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .GG_Slide_Introduction_Title{
     color:rgb(248, 183, 44);

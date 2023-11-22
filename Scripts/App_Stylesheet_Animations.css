@@ -3,10 +3,6 @@
 	This file contains all the preset animations for Doodle Launcher
 */
 
-*{
-	animation-play-state: paused;
-}
-
 @keyframes open_LoadingScreen_Elements{
 	from {opacity: 0%;}
 	to {opacity: 100%;}
