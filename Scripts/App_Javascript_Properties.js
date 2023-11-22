@@ -5,13 +5,13 @@
 
 /* App Information */
 var App_Title = "ES Game Graphics";
-var App_Version_Title = "ES Game Graphics 1.0";
+var App_Version_Title = "Parade of Characters";
 var App_Version_Number = "1.0";
 var App_Version_ContinuityNumber = "1.0"
 var App_Version_BuildNumber = 1;
-var App_CopyrightTitle = "Content By ElmerF 2023";
+var App_CopyrightTitle = "Content By ElmerF & Alexander Oro 2023";
 var App_Version_ELMSUI = "1.5";
-var App_Version_CompilationDate = "October 27, 2023";
+var App_Version_CompilationDate = "23 November 2023";
 var path = window.location.pathname;
 var App_CurrentPageName = path.split("/").pop();
 // The name used to specify the local storage key name that will be used in the program. For universal access, use ABE_

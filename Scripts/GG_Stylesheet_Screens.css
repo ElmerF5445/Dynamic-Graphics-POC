@@ -111,3 +111,36 @@
     color: white;
     margin: 0;
 }
+
+.GG_Slide_Title_Ball{
+    position: absolute;
+    height: 450px;
+    transform: translateY(-20px);
+}
+
+.GG_Slide_Title_MainText{
+    position: absolute;
+    transform: translateY(250px);
+}
+
+.GG_Slide_Title_Presents{
+    position: absolute;
+    transform: translateY(-290px) scale(0.56);
+}
+
+.GG_Slide_Title_BG{
+    width: 100%;
+    position: absolute;
+}
+
+.GG_Slide_Title_BG:nth-child(2){
+    opacity: 25%;
+}
+.GG_Slide_Title_Clouds{
+    position: absolute;
+    opacity: 30%;
+}
+
+.GG_Slide_Title_Clouds:nth-child(2){
+    transform: translateX(200px);
+}
