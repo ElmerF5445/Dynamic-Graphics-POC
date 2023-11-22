@@ -332,31 +332,73 @@
 		<div class="Page_MainContent" id="Page_MainContent" data-id="">
 			<div class="Tab_Container" id="tab_Screen_1">
 				<h1 class="General_Title">
-					Slide 1 - Title screen
+					Title screen
 				</h1>
 				<div class="General_Button" onclick="Slides_SwitchToSlide(0)">
 					Switch to this slide
 				</div>
 				
 				<h1 class="General_Title">
-					Slide 2 - Invocation
+					Invocation
 				</h1>
 				<div class="General_Button" onclick="Slides_SwitchToSlide(1)">
-					Switch to this slide
+					Switch to title slide
 				</div>
-
-				<h1 class="General_Title">
-					Slide 3 - National Anthem
-				</h1>
 				<div class="General_Button" onclick="Slides_SwitchToSlide(2)">
-					Switch to this slide
+					Switch to video slide
+				</div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr;">
+					<div class="General_Button" onclick="Video_Play('Video_Invocation')">
+						Play video
+					</div>
+					<div class="General_Button" onclick="Video_Pause('Video_Invocation')">
+						Pause video
+					</div>
 				</div>
 
 				<h1 class="General_Title">
-					Slide 4 - Opening Remarks
+					National Anthem
 				</h1>
 				<div class="General_Button" onclick="Slides_SwitchToSlide(3)">
+					Switch to title slide
+				</div>
+				<div class="General_Button" onclick="Slides_SwitchToSlide(4)">
+					Switch to video slide
+				</div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr;">
+					<div class="General_Button" onclick="Video_Play('Video_Anthem')">
+						Play video
+					</div>
+					<div class="General_Button" onclick="Video_Pause('Video_Anthem')">
+						Pause video
+					</div>
+				</div>
+
+				<h1 class="General_Title">
+					Opening Remarks
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide(5)">
 					Switch to this slide
+				</div>
+
+				<h1 class="General_Title">
+					Criteria
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide(6)">
+					Switch to this slide
+				</div>
+
+				<h1 class="General_Title">
+					Panel of judges
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide(7)">
+					Ms. Mary Rose Montiadora
+				</div>
+				<div class="General_Button" onclick="Slides_SwitchToSlide(8)">
+					Mr. Dave Lord Rubaya
+				</div>
+				<div class="General_Button" onclick="Slides_SwitchToSlide(9)">
+					Ms. Sally Silang
 				</div>
 			</div>			
 		</div>

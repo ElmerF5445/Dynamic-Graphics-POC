@@ -14,3 +14,15 @@ function Slides_SwitchToSlide(Input){
         Screen.Slides_SwitchToSlide(Input);
     }
 }
+
+function Video_Play(File){
+    if(Screen){
+        Screen.Video_Play(File);
+    }
+}
+
+function Video_Pause(File){
+    if(Screen){
+        Screen.Video_Pause(File);
+    }
+}

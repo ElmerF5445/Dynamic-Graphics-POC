@@ -110,6 +110,8 @@
 .GG_Slide_Title{
     color: white;
     margin: 0;
+    font-family: Hauser;
+    z-index: 50;
 }
 
 .GG_Slide_Title_Ball{
@@ -139,8 +141,124 @@
 .GG_Slide_Title_Clouds{
     position: absolute;
     opacity: 30%;
+    align-self: center;
 }
 
 .GG_Slide_Title_Clouds:nth-child(2){
     transform: translateX(200px);
+}
+
+.GG_Slide_Remarks_Title{
+    font-family: Hauser;
+    color: white;
+    font-size: 60;
+    text-transform: capitalize;
+    margin: 0;
+    position: absolute;
+    transform: translateY(-45px);
+    color:rgb(132, 44, 248);
+    -webkit-text-stroke: 3px black;
+}
+
+.GG_Slide_Remarks_Name{
+    font-family: Hauser;
+    color: white;
+    font-size: 120;
+    text-transform: capitalize;
+    margin: 0;
+    position: absolute;
+    transform: translateY(30px);
+    color:rgb(248, 183, 44);
+    -webkit-text-stroke: 3px black;
+}
+
+.GG_Slide_Remarks_Underline{
+    background-color: rgb(248, 183, 44);
+    position: absolute;
+    height: 40px;
+}
+
+.GG_Slide_Remarks_Underline:nth-child(1){
+    width: 450px;
+}
+
+.Slide_Video{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: none;
+    transition: 0.75s;
+    position: absolute;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.GG_Slide#GG_Slide_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GG_Slide#GG_Slide_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GG_Slide#GG_Slide_6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GG_Slide#GG_Slide_7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GG_Slide#GG_Slide_7 > .GG_Slide_Title_BG:nth-child(2){
+    opacity: 10%;
+}
+
+.GG_Slide_Introduction_Title{
+    color:rgb(248, 183, 44);
+    /* color:rgb(153, 44, 248); */
+    margin: 0;
+    font-family: Hauser;
+    z-index: 50;
+    font-size: 125;
+    -webkit-text-stroke: 5px black;
+    text-transform: capitalize;
+}
+
+.GG_Slide_Criteria{
+    width: 90%;
+    height: auto;
+    position: absolute;
+    z-index: 50;
+    /* background-color: rgba(128, 128, 128, 0.301); */
+    padding: 10px;
+}
+
+.GG_Slide_Criteria_Item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.GG_Slide_Criteria_Item_Title{
+    font-family: Hauser;
+    color: rgb(181, 131, 219);
+    margin: 0;
+    font-size: 70px;
+}
+
+.GG_Slide_Criteria_Item_Value{
+    font-family: Hauser;
+    color: rgb(255, 185, 33);
+    text-align: end;
+    margin: 0;
+    font-size: 90px;
 }

@@ -47,3 +47,10 @@ function Animation_TogglePlayState(){
     }
 }
 
+function Video_Play(Name){
+    document.getElementById(Name).play();
+}
+
+function Video_Pause(Name){
+    document.getElementById(Name).pause();
+}
