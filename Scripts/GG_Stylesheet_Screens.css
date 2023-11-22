@@ -1,0 +1,113 @@
+*[Animation_State="Animation_State_Paused"]{
+    animation-play-state: paused;
+}
+
+*[Animation_State="Animation_State_Playing"]{
+    animation-play-state: running;
+}
+
+.GG_Title_Banner{
+    width: 70%;
+    user-select: none;
+    pointer-events: none;
+    transform: translateY(-20px);
+    animation-name: Bounce_Slight;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+}
+
+.GG_Slide{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: none;
+    transition: 0.75s;
+    position: absolute;
+}
+
+.Slide_Specific_Title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: none;
+    animation-play-state: paused;
+}
+
+
+
+@keyframes Bounce_Slight{
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.GG_Title_BG_Rectangles{
+    width: 95%;
+    height: 95%;
+    border: solid rgb(168, 7, 218) 20px;
+    position: absolute;
+    animation-name: BG_Rectangles;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    opacity: 0%;
+    box-shadow: inset 0px 0px 10px 5px rgb(168, 7, 218);
+}
+
+.GG_Title_BG_Rectangles:nth-child(1){
+    animation-delay: 0s;
+}
+
+.GG_Title_BG_Rectangles:nth-child(2){
+    animation-delay: 2s;
+}
+
+.GG_Title_BG_Rectangles:nth-child(3){
+    animation-delay: 4s;
+}
+
+.GG_Title_BG_Rectangles:nth-child(5){
+    animation-delay: 6s;
+}
+
+.GG_Title_BG_Rectangles:nth-child(6){
+    animation-delay: 8s;
+}
+
+.GG_Title_BG_Rectangles:nth-child(7){
+    animation-delay: 10s;
+}
+
+@keyframes BG_Rectangles{
+    0% {
+        width: 0%;
+        height: 0%;
+        /* border-width: 30px; */
+        opacity: 0%;
+        /* transform: rotate(0deg); */
+    }
+
+    100%{
+        width: 110%;
+        height: 110%;
+        /* border-width: 40px; */
+        opacity: 75%;
+        /* transform: rotate(45deg); */
+    }
+}
+
+.GG_Slide_Title{
+    color: white;
+    margin: 0;
+}
