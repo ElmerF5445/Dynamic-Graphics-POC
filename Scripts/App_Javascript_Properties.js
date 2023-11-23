@@ -4,7 +4,7 @@
 */
 
 /* App Information */
-var App_Title = "ES Game Graphics";
+var App_Title = "Parade of Characters";
 var App_Version_Title = "Parade of Characters";
 var App_Version_Number = "1.0";
 var App_Version_ContinuityNumber = "1.0"

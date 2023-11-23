@@ -25,6 +25,14 @@ function Slides_SwitchToSlide(Slide_Number){
         Slides[a].style.opacity = "0%";
     }
     Slides[Slide_Number].style.opacity = "100%";
+    for (let child of Slides[Slide_Number].children){
+        child.setAttribute('data-id', null);
+    }
+    setTimeout(function(){
+        for (let child of Slides[Slide_Number].children){
+            child.setAttribute('data-id', "AnimationPlay");
+        }
+    }, 100);
     // for (c = 0; c < Slides[Slide_Number].length; c++){
     //     Slides[Slide_Number][c].setAttribute("Animation_State", "Animation_State_Playing");
     // }
@@ -33,7 +41,7 @@ function Slides_SwitchToSlide(Slide_Number){
 var Screen_ActiveSlide = 1;
 var Animation_PlayState = "Playing";
 function Animation_TogglePlayState(){
-    var Animation_MainContainerChildElements = document.getElementById("GG_Slide_" + Screen_ActiveSlide).children;
+    /*var Animation_MainContainerChildElements = document.getElementById("GG_Slide_" + Screen_ActiveSlide).children;
     if (Animation_PlayState == "Playing"){
         for (a = 0; a < Animation_MainContainerChildElements.length; a++){
             Animation_MainContainerChildElements[a].setAttribute("Animation_State", "Animation_State_Paused");
@@ -44,7 +52,7 @@ function Animation_TogglePlayState(){
             Animation_MainContainerChildElements[a].setAttribute("Animation_State", "Animation_State_Playing");
         }
         Animation_PlayState = "Playing";
-    }
+    }*/
 }
 
 function Video_Play(Name){

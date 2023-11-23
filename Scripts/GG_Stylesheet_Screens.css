@@ -1,10 +1,30 @@
-*[Animation_State="Animation_State_Paused"]{
-    animation-play-state: paused;
+@font-face {
+	font-family: "Raleway";
+	src: url('../Assets/Fonts/Raleway-VariableFont_wght.ttf') format("truetype");
+	font-weight: 100 900;
 }
 
-*[Animation_State="Animation_State_Playing"]{
-    animation-play-state: running;
+@font-face {
+	font-family: "Roboto";
+	src: url('../Assets/Fonts/Roboto-Regular.ttf') format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
+
+@font-face {
+	font-family: "Hauser";
+	src: url('../Assets/Fonts/Hauser.otf') format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* *[Animation_State="Animation_State_Paused"]{
+    animation-play-state: paused;
+} */
+
+/* *[Animation_State="Animation_State_Playing"]{
+    animation-play-state: running;
+} */
 
 .GG_Title_Banner{
     width: 70%;
@@ -142,10 +162,25 @@
     position: absolute;
     opacity: 30%;
     align-self: center;
+    animation-name: Clouds_Loop;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 
 .GG_Slide_Title_Clouds:nth-child(2){
     transform: translateX(200px);
+}
+
+@keyframes Clouds_Loop{
+    0% {
+        opacity: 30%;
+    }
+    50% {
+        opacity: 20%;
+    }
+    100% {
+        opacity: 30%;
+    }
 }
 
 .GG_Slide_Remarks_Title{
@@ -241,6 +276,29 @@
     align-items: center;
 }
 
+.GG_Slide#GG_Slide_50{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GG_Slide#GG_Slide_51{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GG_Slide#GG_Slide_52{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GG_Slide#GG_Slide_53{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .GG_Slide_Introduction_Title{
     color:rgb(248, 183, 44);
@@ -281,4 +339,119 @@
     text-align: end;
     margin: 0;
     font-size: 90px;
+}
+
+.GG_Slide_Flags_Flag{
+	position: absolute;
+	height: 90%;
+	z-index: 1;
+	opacity: 80%;
+    
+    /* animation-iteration-count: infinite; */
+}
+
+.GG_Slide_Flags_Flag[data-id="AnimationPlay"]{
+    animation-name: Flags_Flag_Rotate;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+.GG_Slide_Flags_Flag_2{
+	position: absolute;
+	height: 90%;
+	z-index: 1;
+	opacity: 80%;
+    
+    /* animation-iteration-count: infinite; */
+}
+
+.GG_Slide_Flags_Flag_2[data-id="AnimationPlay"]{
+    animation-name: Flags_Flag_Rotate_2;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+.GG_Slide_Flags_Image{
+	position: absolute;
+	height: 90%;
+	z-index: 1;
+	opacity: 0%;
+}
+
+.GC_Slide_Flags_Country_Decoration{
+	position: absolute;
+	font-family: Hauser;
+	color: rgba(255, 166, 0, 0);
+	margin: 0;
+	z-index: 50;
+    font-size: 120;
+	/* -webkit-text-stroke: 3px rgba(255, 255, 255, 0.377); */
+}
+
+.GC_Slide_Flags_Country_Title{
+    position: absolute;
+	font-family: Hauser;
+	color: rgb(255, 166, 0);
+	margin: 0;
+	z-index: 50;
+    font-size: 150;
+    text-align: center;
+    -webkit-text-stroke: 3px black;
+}
+
+.GC_Slide_Flags_Country_Title[data-id="AnimationPlay"]{
+    animation-name: Flags_Country_ScaleDown;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+
+.GC_Slide_Flags_Country_Title_2{
+    position: absolute;
+	font-family: Hauser;
+	color: rgb(255, 166, 0);
+	margin: 0;
+	z-index: 50;
+    font-size: 150;
+    bottom: 20px;
+    text-align: center;
+    -webkit-text-stroke: 3px black;
+}
+
+.GC_Slide_Flags_Country_Title_2[data-id="AnimationPlay"]{
+    animation-name: Flags_Country_ScaleDown;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+
+.Flags{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.GG_Slide_Flags_Fog{
+    position: absolute;
+    z-index: 30;
+    opacity: 5%;
+    bottom: 1px;
+    transform: scale(2);
+}
+
+.GG_Slide_Flags_Fog[data-id="AnimationPlay"]:nth-child(1){
+    animation-name: Flags_Fog_FadeOut_1;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+
+.GG_Slide_Flags_Fog:nth-child(2)[data-id="AnimationPlay"]{
+    animation-name: Flags_Fog_FadeOut_2;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+
+.GG_Slide_Flags_Fog:nth-child(3)[data-id="AnimationPlay"]{
+    animation-name: Flags_Fog_FadeOut_3;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
 }
